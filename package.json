@@ -2,16 +2,16 @@
   "name": "nodegit-lfs",
   "version": "0.0.11",
   "description": "A wrapper for NodeGit to facilitate LFS support",
-  "main": "build/src/index.js",
+  "main": "lib/src/index.js",
   "scripts": {
     "build": "yarn eslint && yarn compile",
-    "compile": "\"node_modules/.bin/babel\" src -d build/src",
+    "compile": "bsb -make-world && \"node_modules/.bin/babel\" src -d lib/src",
     "eslint": "\"node_modules/.bin/eslint\" src",
     "eslint-full": "\"node_modules/.bin/eslint\" src test/tests",
     "eslint-quick-fix": "\"node_modules/.bin/eslint\" src test/tests --fix",
     "pretest": "yarn eslint",
     "prepublish": "yarn eslint && yarn compile",
-    "src-watch": "\"node_modules/.bin/babel\" src -d build/src -w",
+    "src-watch": "\"node_modules/.bin/babel\" src -d lib/src -w",
     "test": "nyc mocha --compilers js:babel-core/register --expose-gc test/runner \"test/**/*.spec.js\"",
     "test-debug": "mocha --debug-brk --compilers js:babel-core/register --expose-gc test/runner \"test/**/*.spec.js\"",
     "test-watch": "mocha --compilers js:babel-core/register --expose-gc --watch test/runner \"test/**/*.spec.js\""
@@ -26,7 +26,7 @@
     "nodegit"
   ],
   "files": [
-    "build/src"
+    "lib/src"
   ],
   "bugs": {
     "url": "https://github.com/Axosoft/nodegit-lfs/issues"
@@ -36,6 +36,7 @@
     "nodegit": ">=0.20.1"
   },
   "devDependencies": {
+    "bs-platform": "^1.9.1",
     "chai": "^4.0.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",

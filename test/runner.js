@@ -6,7 +6,7 @@ import sinonChai from 'sinon-chai';
 
 import {
   core
-} from '../build/src/commands/lfsCommands';
+} from '../lib/src/commands/lfsCommands';
 import {
   cachedLfsTestRemotePath,
   emptyRepoPath,
@@ -16,7 +16,7 @@ import {
   testReposPath
 } from './constants';
 
-import LFS from '../build/src';
+import LFS from '../lib/src';
 
 import * as testLFSServer from './server/server';
 

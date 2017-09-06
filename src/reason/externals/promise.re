@@ -1,0 +1,2 @@
+external catch: ('reject => unit) => Js.Promise.t 'resolve => Js.Promise.t 'resolve = "" [@@bs.send];
+external create: (('resolve => unit) => ('reject => unit) => unit) => Js.Promise.t 'resolve = "Promise" [@@bs.new]

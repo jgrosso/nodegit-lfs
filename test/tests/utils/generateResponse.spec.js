@@ -4,8 +4,8 @@ import {
 
 import {
   Error
-} from '../../../build/src/constants';
-import generateResponse from '../../../build/src/utils/generateResponse';
+} from '../../../lib/src/constants';
+import generateResponse from '../../../lib/src/utils/generateResponse';
 
 describe('generateResponse', () => {
   describe('the default export', () => {

@@ -3,30 +3,30 @@ import {
 } from 'chai';
 import NodeGit from 'nodegit';
 
-import checkout from '../../build/src/commands/checkout';
-import clone from '../../build/src/commands/clone';
-import fetch from '../../build/src/commands/fetch';
-import initialize from '../../build/src/initialize';
+import checkout from '../../lib/src/commands/checkout';
+import clone from '../../lib/src/commands/clone';
+import fetch from '../../lib/src/commands/fetch';
+import initialize from '../../lib/src/initialize';
 import {
   core
-} from '../../build/src/commands/lfsCommands';
-import list from '../../build/src/commands/ls';
-import prune from '../../build/src/commands/prune';
-import pull from '../../build/src/commands/pull';
-import push from '../../build/src/commands/push';
-import testPointer from '../../build/src/commands/pointer';
-import register from '../../build/src/register';
-import track from '../../build/src/commands/track';
-import unregister from '../../build/src/unregister';
-import untrack from '../../build/src/commands/untrack';
-import version from '../../build/src/commands/version';
+} from '../../lib/src/commands/lfsCommands';
+import list from '../../lib/src/commands/ls';
+import prune from '../../lib/src/commands/prune';
+import pull from '../../lib/src/commands/pull';
+import push from '../../lib/src/commands/push';
+import testPointer from '../../lib/src/commands/pointer';
+import register from '../../lib/src/register';
+import track from '../../lib/src/commands/track';
+import unregister from '../../lib/src/unregister';
+import untrack from '../../lib/src/commands/untrack';
+import version from '../../lib/src/commands/version';
 import {
   loadGitattributeFiltersFromRepo,
   repoHasLfs
-} from '../../build/src/helpers';
+} from '../../lib/src/helpers';
 import {
   dependencyCheck
-} from '../../build/src/utils/checkDependencies';
+} from '../../lib/src/utils/checkDependencies';
 
 // NOTE These tests depend on `LFS(NodeGit)` being called in the global `beforeEach`.
 describe('index', () => {

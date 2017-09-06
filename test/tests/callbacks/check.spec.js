@@ -4,9 +4,9 @@ import {
 
 import {
   Error
-} from '../../../build/src/constants';
-import track from '../../../build/src/commands/track';
-import checkCallback from '../../../build/src/callbacks/check';
+} from '../../../lib/src/constants';
+import track from '../../../lib/src/commands/track';
+import checkCallback from '../../../lib/src/callbacks/check';
 
 describe('check', () => {
   beforeEach(function () {

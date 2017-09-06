@@ -12,7 +12,7 @@ import {
   getFilePointer
 } from '../../utils';
 
-import trackCommand from '../../../build/src/commands/track';
+import trackCommand from '../../../lib/src/commands/track';
 
 const track = (repo, globs) => {
   let index;

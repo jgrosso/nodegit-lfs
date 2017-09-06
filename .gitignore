@@ -19,7 +19,7 @@ coverage
 .lock-wscript
 
 # Build directory
-build
+lib
 
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git

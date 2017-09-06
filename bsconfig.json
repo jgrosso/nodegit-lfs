@@ -1,0 +1,11 @@
+{
+  "name": "nodegit-lfs",
+  "bsc-flags": ["-bs-super-errors"],
+  "bs-dependencies": [],
+  "sources": {
+    "dir": "src/reason",
+    "subdirs": [
+      "externals"
+    ]
+  }
+}

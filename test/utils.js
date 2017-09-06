@@ -8,7 +8,7 @@ import {
   lfsTestRemotePath
 } from './constants';
 
-import spawn from '../build/src/utils/spawnHelper';
+import spawn from '../lib/src/utils/spawnHelper';
 
 export const createDummyFile = (fileName, length) => {
   // https://github.com/sindresorhus/crypto-random-string/blob/master/index.js#L9

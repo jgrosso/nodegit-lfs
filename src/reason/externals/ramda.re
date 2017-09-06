@@ -1,0 +1,1 @@
+external mergeDeepRight: Js.t {..} => Js.t {..} => Js.t {..} = "" [@@bs.module "ramda"];

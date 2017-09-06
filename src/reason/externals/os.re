@@ -1,0 +1,1 @@
+external eol: string = "" [@@bs.module];

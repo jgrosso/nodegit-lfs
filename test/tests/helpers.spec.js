@@ -14,8 +14,8 @@ import {
   loadGitattributeFiltersFromRepo,
   repoHasLfsFilters,
   repoHasLfsObjectBin
-} from '../../build/src/helpers';
-import track from '../../build/src/commands/track';
+} from '../../lib/src/helpers';
+import track from '../../lib/src/commands/track';
 
 describe('helpers', () => {
   describe.only('errorCatchHandler', () => {

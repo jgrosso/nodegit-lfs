@@ -4,8 +4,8 @@ import {
 
 import {
   Error
-} from '../../../build/src/constants';
-import initialize from '../../../build/src/callbacks/initialize';
+} from '../../../lib/src/constants';
+import initialize from '../../../lib/src/callbacks/initialize';
 
 describe('initialize', () => {
   describe('the default export', () => {

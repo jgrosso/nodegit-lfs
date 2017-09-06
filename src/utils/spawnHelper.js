@@ -125,7 +125,7 @@ export const spawnShell = (command, opts = {}, size, callback) => new Promise(
       .then((socketName) => {
         const options = R.mergeDeepRight(
           { env: process.env },
-          R.mergeDeepRight(opts, { encoding: null })
+          R.mergeDeepRight(opts, { "encoding": null })
         );
 
         spawnedProcess = pty.spawn(defaultShell, [], options);

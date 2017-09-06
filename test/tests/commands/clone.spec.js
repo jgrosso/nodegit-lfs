@@ -19,10 +19,10 @@ import {
 
 import {
   BAD_REGEX_PARSE_RESULT
-} from '../../../build/src/constants';
+} from '../../../lib/src/constants';
 import {
   core
-} from '../../../build/src/commands/lfsCommands';
+} from '../../../lib/src/commands/lfsCommands';
 
 const tempRepoPath = path.join(testReposPath, 'nodegit-lfs-test-repo');
 
